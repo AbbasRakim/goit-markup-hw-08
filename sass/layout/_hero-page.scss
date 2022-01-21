@@ -1,0 +1,35 @@
+.hero-page {
+  padding-top: 118px;
+  padding-bottom: 118px;
+  text-align: center;
+  background-color: var(--bg-color);
+
+  &__overlay {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/headerbg.jpg);
+  }
+  .hero-page__title {
+    margin-bottom: 30px;
+
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.6;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--bg-color);
+  }
+  .hero-page__button {
+    padding: 10px 32px;
+    &:hover,
+    &:focus {
+      background-color: #188ce8;
+    }
+  }
+}

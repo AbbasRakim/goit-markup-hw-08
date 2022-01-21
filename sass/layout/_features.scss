@@ -1,0 +1,39 @@
+.feature {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.feature__item {
+  text-align: center;
+  margin-bottom: 30px;
+  @media screen and (min-width: 768px) {
+    flex-basis: 50%;
+  }
+}
+.feature__box {
+  align-items: center;
+  text-align: center;
+  margin-bottom: 30px;
+  height: 120px;
+  align-items: center;
+  background: #f5f4fa;
+  border-radius: 4px;
+}
+
+.feature__title {
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.feature__paragraph {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--text-color);
+}
