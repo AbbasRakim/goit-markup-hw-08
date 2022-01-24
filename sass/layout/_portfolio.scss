@@ -1,11 +1,17 @@
 .filter {
   display: flex;
-  justify-content: center;
-  text-align: center;
+  flex-wrap: wrap;
   margin-top: 0;
-  margin-bottom: 50px;
-  &__item:not(:last-child) {
+  margin-bottom: 40px;
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .filter__item:not(:last-child) {
     margin-right: 8px;
+    margin-bottom: 15px;
   }
   .filter__button {
     padding: 6px 22px;
@@ -18,7 +24,7 @@
     text-align: center;
     cursor: pointer;
     border-color: transparent;
-
+    border-radius: 4px;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
       color 250ms cubic-bezier(0.4, 0, 0.2, 1),
       background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -37,17 +43,27 @@
 }
 
 .portfolio {
-  display: flex;
-  flex-wrap: wrap;
-  &__item {
-    background: #ffffff;
-    margin-right: 30px;
-    margin-bottom: 30px;
-    &:nth-last-child(-n + 3) {
-      margin-bottom: 0px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+
+  .portfolio__item {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      flex-basis: calc((100% - 4 * 15px) / 2);
+      margin: 15px;
     }
-    &:nth-child(3n) {
-      margin-right: 0px;
+
+    @media screen and (min-width: 1200px) {
+      flex-basis: calc((100% - 6 * 15px) / 3);
+      margin: 15px;
+    }
+
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
     }
   }
   .portfolio__link {
