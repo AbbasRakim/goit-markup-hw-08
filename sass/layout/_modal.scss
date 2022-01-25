@@ -38,8 +38,12 @@
   }
   .modal__button-close {
     position: absolute;
-    top: 8px;
-    right: 8px;
+    top: 101px;
+    right: 23px;
+    @media screen and (min-width: 768px) {
+      top: 8px;
+      right: 8px;
+    }
 
     width: 30px;
     height: 30px;
@@ -151,8 +155,8 @@
   margin-bottom: 30px;
 
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7;
+  font-size: 12px;
+  line-height: 1.16;
   color: var(--text-color);
   &::before {
     display: inline-block;

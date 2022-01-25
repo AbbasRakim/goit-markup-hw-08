@@ -13,7 +13,15 @@
         rgba(47, 48, 58, 0.4)
       ),
       url(../images/headerbg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/headerbg@2x.jpg);
+    }
   }
+
   .hero-page__title {
     margin-bottom: 30px;
 
