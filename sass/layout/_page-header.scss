@@ -36,21 +36,21 @@
       display: none;
     }
 
-    .menu-button__icon-cross {
+    .menu-button__icon-menu {
       display: none;
     }
   }
 }
 
 .menu-button__icon-cross {
-  position: absolute;
+  position: block;
 }
 
 .menu-button.is-open .menu-button__icon-menu {
-  display: none;
+  display: block;
 }
 .menu-button.is-open .menu-button__icon-cross {
-  display: block;
+  display: none;
 }
 
 .menu-container {
@@ -58,19 +58,22 @@
 
   @media screen and (max-width: 767px) {
     display: none;
-    position: absolute;
+    position: fixed;
+    height: 100vh;
     top: 0;
     left: 0;
     width: 100%;
     padding-bottom: 48px;
     padding-top: 48px;
     padding-left: 40px;
+    padding-right: 83px;
     z-index: 10;
 
     &.is-open {
       display: block;
     }
   }
+
   @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
@@ -116,8 +119,8 @@
   }
 
   .nav-set__link--active-page {
+    color: var(--accent-color);
     @media screen and (min-width: 768px) {
-      color: var(--accent-color);
       &::after {
         content: "";
         position: absolute;
@@ -145,7 +148,7 @@
   @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: column-reverse;
-    margin-left: 82px;
+    margin-left: 84px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -167,6 +170,8 @@
 
   @media screen and (min-width: 768px) {
     margin-bottom: 0;
+    display: flex;
+    text-align: center;
   }
 }
 
@@ -180,11 +185,11 @@
 
   @media screen and (min-width: 768px) {
     margin-bottom: 10px;
+    align-items: center;
   }
 
   @media screen and (min-width: 1200px) {
     text-align: center;
-    justify-content: center;
     margin-right: 30px;
     margin-bottom: 0;
   }
@@ -199,10 +204,18 @@
   }
 
   @media screen and (min-width: 768px) {
+    display: flex;
     font-size: 12px;
-    line-height: 1.7px;
+    line-height: 1.7;
     letter-spacing: 0.02em;
     color: var(--text-color);
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
   }
 }
 
