@@ -70,7 +70,9 @@
     z-index: 10;
 
     &.is-open {
-      display: block;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
   }
 
@@ -82,7 +84,6 @@
 
 .navigation {
   @media screen and (max-width: 767px) {
-    margin-bottom: 302px;
   }
 }
 
