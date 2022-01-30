@@ -1003,7 +1003,7 @@
 
 .modal .modal__button-close {
   position: absolute;
-  top: 101px;
+  top: 23px;
   right: 23px;
   width: 30px;
   height: 30px;
@@ -1175,6 +1175,7 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
+  letter-spacing: 0.2px;
   color: var(--text-color);
 }
 

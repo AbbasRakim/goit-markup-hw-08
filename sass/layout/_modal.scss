@@ -55,7 +55,7 @@
 
   .modal__button-close {
     position: absolute;
-    top: 101px;
+    top: 23px;
     right: 23px;
     @media screen and (min-width: 768px) {
       top: 8px;
@@ -180,6 +180,7 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
+  letter-spacing: 0.2px;
   color: var(--text-color);
   &::before {
     display: inline-block;
