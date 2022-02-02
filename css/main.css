@@ -219,7 +219,7 @@
 .site-contacts__link-tel {
   display: block;
   margin-bottom: 32px;
-  font-size: 34px;
+  font-size: 22px;
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: var(--accent-color);
@@ -360,9 +360,9 @@
 .social-header-set .social-header-set__link {
   padding: 10px;
   padding-left: 0;
-  font-size: 18px;
+  font-size: 13px;
   line-height: 1.2;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.01em;
   color: var(--accent-color);
 }
 
@@ -416,6 +416,13 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--primary-white-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-page .hero-page__title {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .hero-page .hero-page__button {
@@ -1368,7 +1375,7 @@
   height: 100%;
   top: 0;
   left: 0;
-  padding: 77px 24px;
+  padding: 44px 24px;
   -webkit-transform: translateY(100%);
       -ms-transform: translateY(100%);
           transform: translateY(100%);
@@ -1379,7 +1386,7 @@
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   opacity: 0;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 13px;
   line-height: 1.5;
   color: var(--primary-white-color);
   background-color: rgba(33, 150, 243, 0.9);
